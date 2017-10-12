@@ -50,13 +50,10 @@ RUN echo http://dl-cdn.alpinelinux.org/alpine/edge/testing >> /etc/apk/repositor
 # Example: source /docker-lib.sh && start_docker
 ADD ./docker-lib.sh /usr/local/bin/docker-lib.sh
 
-# wrapdocker script, potentially for future use
-ADD ./wrapdocker /usr/local/bin/wrapdocker
-
 ENTRYPOINT [ \
 	"switch", \
 		"shell=/bin/sh", "--", \
 	"codep", \
 		"/usr/bin/dockerd", \
-    "/usr/sbin/rsyslogd" \
+        "/usr/sbin/rsyslogd" \
 ]
