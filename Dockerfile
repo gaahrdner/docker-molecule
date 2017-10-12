@@ -55,5 +55,5 @@ ENTRYPOINT [ \
 		"shell=/bin/sh", "--", \
 	"codep", \
 		"/usr/bin/dockerd", \
-        "/usr/sbin/rsyslogd" \
+		"/usr/sbin/rsyslogd" \
 ]
