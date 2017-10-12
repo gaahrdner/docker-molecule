@@ -57,5 +57,6 @@ ENTRYPOINT [ \
 	"switch", \
 		"shell=/bin/sh", "--", \
 	"codep", \
-		"/usr/bin/dockerd" \
+		"/usr/bin/dockerd", \
+    "/usr/sbin/rsyslogd" \
 ]
