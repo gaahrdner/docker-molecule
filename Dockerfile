@@ -39,6 +39,7 @@ RUN echo http://dl-cdn.alpinelinux.org/alpine/edge/testing >> /etc/apk/repositor
         docker-py \
         dopy \
         molecule==${MOLECULE_VERSION} \
+	python-consul \
     && curl -L https://github.com/progrium/entrykit/releases/download/v${ENTRYKIT_VERSION}/entrykit_${ENTRYKIT_VERSION}_Linux_x86_64.tgz | tar zx \
     && chmod +x entrykit \
     && mv entrykit /bin/entrykit \
